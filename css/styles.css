@@ -1,0 +1,390 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #757575;
+  --nav-link-color: #212121;
+  --header-address-color: #757575;
+  --header-logo-color: #000000;
+  --accent-color: #2196f3;
+  --hero-color: #ffffff;
+  --hero-btn-color: #ffffff;
+  --section-title-color: #212121;
+  --footer-logo-color: #ffffff;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --footer-address-location-color: #ffffff;
+  --portfolio-btn-txt-color: #212121;
+  --portfolio-btn-color: #f5f4fa;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--main-color);
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* ========== Components ========== */
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--section-title-color);
+}
+
+/* ========== End Components ========== */
+
+/* ========== Header ========== */
+.header {
+  padding: 32px 0;
+}
+
+.header .container,
+.navigation,
+.navigation-list,
+.header-address-list {
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list-link,
+.header-address-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-link {
+  color: var(--nav-link-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--accent-color);
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.header-address-link {
+  font-style: normal;
+  color: var(--header-address-color);
+}
+
+.header-address-link:not(last-child) {
+  margin-right: 50px;
+}
+/* ========== End Header ========== */
+
+/* ========== Hero ========== */
+.hero {
+  padding: 200px 0;
+
+  background: #2f303a;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--hero-color);
+}
+
+.modal-btn {
+  display: block;
+  padding: 10px 32px;
+
+  margin: 0 auto;
+
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--hero-btn-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+/* ========== End Hero ========== */
+
+/* ========== Advantages ========== */
+
+.advantages {
+  padding: 94px 0;
+}
+
+.advantages-title {
+  display: none;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--section-title-color);
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+/* ========== End Advantages ========== */
+
+/* ========== About us ========== */
+.about {
+  padding: 0 0 94px;
+}
+
+.about-list {
+  flex-wrap: wrap;
+}
+
+.about-list-item {
+  margin-right: 30px;
+
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.about-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* ========== End About us ========== */
+
+/* ========== Our team ========== */
+
+.team {
+  padding: 94px 0;
+}
+
+.team-list {
+  flex-wrap: wrap;
+}
+
+.team-list-item {
+  margin-right: 30px;
+
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.team-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-item-text {
+  margin: 30px 0;
+
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+
+  color: var(--section-title-color);
+}
+
+.team-description {
+  font-weight: 400;
+}
+
+/* ========== End Our team ========== */
+
+/*  ========== Footer ========== */
+.footer {
+  padding: 60px 0;
+
+  background: #2f303a;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--footer-logo-color);
+}
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--footer-address-color);
+}
+
+.footer-list-link-location {
+  color: var(--footer-address-location-color);
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus,
+.footer-list-link-location:hover,
+.footer-list-link-location:focus {
+  color: var(--accent-color);
+}
+/*  ========== End Footer ========== */
+
+/*  ========== Portfolio ========== */
+.portfolio {
+  padding: 94px 0;
+}
+.portfolio-title {
+  display: none;
+}
+
+.filter-list {
+  margin-bottom: 50px;
+
+  justify-content: center;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list-btn {
+  display: inline-block;
+  padding: 6px 22px;
+
+  border-radius: 4px;
+
+  background-color: var(--portfolio-btn-color);
+  color: var(--portfolio-btn-txt-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-list {
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  margin-right: 30px;
+
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item-text {
+  padding: 20px 24px;
+}
+
+.portfolio-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--section-title-color);
+}
+
+.portfolio-item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+
+/*  ========== End Portfolio ========== */
