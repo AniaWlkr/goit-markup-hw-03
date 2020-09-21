@@ -189,6 +189,12 @@ address {
   line-height: 1.875;
   letter-spacing: 0.06em;
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+  border-style: none;
+}
+
 /* ========== End Hero ========== */
 
 /* ========== Advantages ========== */
