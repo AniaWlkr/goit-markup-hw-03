@@ -223,7 +223,36 @@ address {
   margin-right: 30px;
 }
 
+.advantages-list-item::before {
+  display: block;
+  content: "";
+
+  height: 120px;
+
+  background-color: var(--our-team-section-bgc);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-list-item.antenna::before {
+  background-image: url(../images/advantages/antenna.svg);
+}
+
+.advantages-list-item.clock::before {
+  background-image: url(../images/advantages/clock.svg);
+}
+
+.advantages-list-item.diagram::before {
+  background-image: url(../images/advantages/diagram.svg);
+}
+
+.advantages-list-item.astronaut::before {
+  background-image: url(../images/advantages/astronaut.svg);
+}
+
 .advantages-subtitle {
+  padding-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
